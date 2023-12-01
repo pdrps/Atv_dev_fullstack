@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página principal</title>
+    <style>
+      body {
+        background-color: rgb(238, 238, 238);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .main-box {
+        height: 400px;
+        width: 800px;
+        margin-top: 100px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .inputs {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        margin-left: 10px;
+        font-size: 25px;
+        display: flex;
+        flex-direction: row;
+        align-self: baseline;
+      }
+      .opcoes{
+        width: 800px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+      .button {
+        height: 60px;
+        width: 370px;
+        font-size: 20px;
+        margin-top: 50px;
+        border-radius: 10px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-box">
+      <h1>VOCÊ GOSTARIA DE:</h1>
+      <div class="inputs">
+        <div class="opcoes">
+          <a href="pag_autorizacoes.php">
+            <button class="button" style="border-color: black" type="submit">
+              <h3>CONSULTAR AUTORIZAÇÕES</h3>
+            </button>
+          </a>
+          <a href="pag_cadastro.html">
+            <button class="button" style="border-color: black" type="submit">
+              <h3>CADASTRAR REQUISIÇÃO</h3>
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

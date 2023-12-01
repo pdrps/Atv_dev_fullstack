@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página de cadastro</title>
+    <style>
+      body {
+        background-color: rgb(238, 238, 238);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .main-box {
+        height: 400px;
+        width: 800px;
+        margin-top: 100px;
+        border: 2px solid black;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .inputs {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        margin-left: 10px;
+        font-size: 25px;
+        display: flex;
+        flex-direction: row;
+        align-self: baseline;
+      }
+      .voltar {
+        height: 45px;
+        width: 120px;
+        font-size: 18px;
+        margin-top: 20px;
+        border-radius: 10px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .button {
+        height: 60px;
+        width: 370px;
+        font-size: 20px;
+        margin-top: 50px;
+        border-radius: 10px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="pag_principal.html">
+      <button class="voltar" style="border-color: black" type="submit">
+        <h3>VOLTAR</h3>
+      </button>
+    </a>
+    <form class="mx-8" action="cadastrar.php" method="POST">
+      <div class="main-box">
+        <h1>SOLICITE A SUA AUTORIZAÇÃO</h1>
+        <div class="inputs">
+          <label>NÚMERO DO PROCEDIMENTO:</label>
+          <input
+            class="form-control"
+            type="number"
+            name="procedimento"
+            required=""
+            style="width: 100px; margin-left: 10px"
+          />
+        </div>
+        <div class="inputs">
+          <label>IDADE:</label>
+          <input
+            class="form-control"
+            type="number"
+            name="idade"
+            required=""
+            style="width: 100px; margin-left: 10px"
+          />
+        </div>
+        <div class="inputs">
+          <label>SEXO (M OU F):</label>
+          <input
+            class="form-control"
+            type="text"
+            name="sexo"
+            required=""
+            style="width: 100px; margin-left: 10px"
+          />
+        </div>
+        <div>
+          <a href="pag_principal.html">
+            <button class="button" style="border-color: black" type="submit">
+              <h3>CONCLUIR</h3>
+            </button>
+          </a>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
