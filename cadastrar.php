@@ -19,7 +19,10 @@
     if(($procedimento == 1234) or ($procedimento == 4567) or ($procedimento == 6789)){
         if(($idade > 18) or (($procedimento == 6789) and ($sexo == 'M') and ($idade < 18))){
             $comando1->execute();
-            header("Location:pag_cadastro.html");
+            echo ("<SCRIPT LANGUAGE='JavaScript'>
+                    window.alert('A sua requisição foi registrada')
+                    window.location.href='pag_cadastro.html';
+                  </SCRIPT>");
         }
         if((($procedimento == 1234) and ($idade < 18))or (($procedimento == 6789) and ($sexo == 'F') and ($idade < 18))){
             $comando2->execute();
