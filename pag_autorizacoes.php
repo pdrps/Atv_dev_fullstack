@@ -50,11 +50,16 @@
     </a>
   </body>
 
+  <form action="">
+    <input id="pesquisar" type="search" placeholder="Pesquise o ID da sua requisição" style="width: 250px; margin-top:30px;">
+    <button type="button" onclick="searchData()">PESQUISAR</button>
+  </form>
+
     <h1>Listar Requisições:</h1>
     <table class="tabela">
   <thead>
     <tr>
-      <th scope="col" style="border-right: 1px solid black"><h2>ID autorização<h2></th>
+      <th scope="col" style="border-right: 1px solid black"><h2>ID requisição<h2></th>
       <th scope="col"><h2>Procedimento<h2></th>
       <th scope="col"><h2>Idade<h2></th>
       <th scope="col"><h2>Sexo<h2></th>
@@ -85,5 +90,13 @@
 
 </body>
 
+  <script>
+    var search = document.getElementById('pesquisar');
+
+    function searchData()
+    {
+      window.location = 'pag_autorizacoes.php?search='+search.value;
+    }
+  </script
+
 </html>
-    
