@@ -51,7 +51,7 @@
   </body>
 
   <form action="">
-    <input id="pesquisar" type="search" placeholder="Pesquise o ID da sua requisição" style="width: 250px; margin-top:30px;">
+    <input id="pesquisar" type="search" placeholder="Pesquise o ID da sua requisição ou o número do procedimento" style="width: 250px; margin-top:30px;">
     <button type="button" onclick="searchData()">PESQUISAR</button>
   </form>
 
